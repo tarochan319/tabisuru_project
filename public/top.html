@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/foundation/foundation.css" rel="stylesheet" />
+  <link href="css/layout/layout.css" rel="stylesheet" />
+  <link href="css/object/component/component.css" rel="stylesheet" />
+  <link href="css/object/project/project.css" rel="stylesheet" />
+  <link href="css/object/component/component.css" rel="stylesheet" />
+  <link href="css/object/utility/utility.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="./dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="./dist/jquery.vmap.js"></script>
+  <script type="text/javascript" src="./dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <title>Top</title>
+</head>
+
+<body>
+  <div class="l-wrap">
+    <header class="l-header">
+      <div class="p-header-logo">
+        <a href="index.html" class="p-header-title">
+            <span class="p-header-title__tabi">旅</span>
+            <span class="p-header-title__koromo">する衣 </span>
+            <span class="p-header-title__subTitle">-TABISURU KOROMO-</span>
+        </a>
+        <a href="index.html" class="p-header-title--green">
+          <span class="p-header-title__tabi">旅</span>
+          <span class="p-header-title__koromo">する衣 </span>
+          <span class="p-header-title__subTitle">-TABISURU KOROMO-</span>
+        </a>
+      </div>
+
+      <nav class="p-nav-area">
+        <div class="p-nav-area__inner">
+          <ul>
+            <li class="p-nav-area__illust">
+              <a href="#new_post" class="p-nav-area__illust--blue">■ ILLUSTRATION<span class="p-nav-area__illust--white">■ ILLUSTRATION</span></a>
+            </li>
+
+            <li class="p-nav-area__about">
+              <a href="#about_us" class="p-nav-area__about--green">■ ABOUT US<span class="p-nav-area__about--white">■ ABOUT US</span></a>
+            </li>
+
+            <li class="p-nav-area__create">
+              <a href="info/info.html" class="p-nav-area__create--purple">■ WHO CREATE?<span class="p-nav-area__create--white">■ WHO CREATE?</span></a>
+            </li>
+
+            <li class="p-nav-area__contact">
+              <a href="https://thebase.in/inquiry/isenti-base-shop" class="p-nav-area__contact--red">■ CONTACT US<span class="p-nav-area__contact--white">■ CONTACT US</span></a>
+            </li>
+
+            <li class="p-nav-area__support">
+              <a href="support/support.html" class="p-nav-area__support--orange">■ SUPPORTERS<span class="p-nav-area__support--white">■ SUPPORTERS</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="p-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="p-menu--green">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!--//ここからコンテンツ-->
+
+    <!-- 国名一覧メニュー -->
+    <div class="p-country-list-button">
+      <div class="p-country-list-button--red"></div>
+      <div class="p-country-list-button--white"></div>
+    </div>
+
+    <div class="p-country-list">
+      <ul class="p-country-list__content">
+        <li class="p-country-list__content__list">
+          <h2 class="p-country-list__content__heading">北アメリカ</h2>
+            <a class="js-modal-open" href="" data-modal="usa">>アメリカ</a>
+            <a class="js-modal-open" href="" data-modal="canada">>カナダ</a>
+            <a class="js-modal-none" href="" data-modal="">>メキシコ</a>
+            <a class="js-modal-none" href="" data-modal="">>キューバ</a>
+            <a class="js-modal-none" href="" data-modal="">>ジャマイカ</a>
+            <a class="js-modal-none" href="" data-modal="">>グアテマラ</a>
+            <a class="js-modal-none" href="" data-modal="">>ホンジュラス</a>
+            <a class="js-modal-none" href="" data-modal="">>エルサルバドル</a>
+            <a class="js-modal-none" href="" data-modal="">>ニカラグア</a>
+            <a class="js-modal-none" href="" data-modal="">>コスタリカ</a>
+            <a class="js-modal-none" href="" data-modal="">>パナマ</a>
+            <a class="js-modal-none" href="" data-modal="">>グリーンランド</a>
+            <a class="js-modal-none" href="" data-modal="">>バハマ</a>
+            <a class="js-modal-none" href="" data-modal="">>ハイチ</a>
+            <a class="js-modal-none" href="" data-modal="">>ドミニカ共和国</a>
+            <a class="js-modal-none" href="" data-modal="">>セントクリストファーネイビス</a>
+            <a class="js-modal-none" href="" data-modal="">>アンティグア・バーブーダ</a>
+            <a class="js-modal-none" href="" data-modal="">>ドミニカ</a>
+            <a class="js-modal-none" href="" data-modal="">>セントルシア</a>
+            <a class="js-modal-none" href="" data-modal="">>バルバドス</a>
+            <a class="js-modal-none" href="" data-modal="">>グレナダ</a>
+            <a class="js-modal-none" href="" data-modal="">>トリニダード・トバゴ</a>
+  
+          <h2 class="p-country-list__content__heading">南アメリカ</h2>
+            <a class="js-modal-none" href="" data-modal="">>ベネズエラ</a>
+            <a class="js-modal-none" href="" data-modal="">>コロンビア</a>
+            <a class="js-modal-none" href="" data-modal="">>エクアドル</a>
+            <a class="js-modal-none" href="" data-modal="">>ペルー</a>
+            <a class="js-modal-none" href="" data-modal="">>チリ</a>
+            <a class="js-modal-none" href="" data-modal="">>ガイアナ</a>
+            <a class="js-modal-none" href="" data-modal="">>スリナム</a>
+            <a class="js-modal-none" href="" data-modal="">>仏領ギアナ</a>
+            <a class="js-modal-open" href="" data-modal="brazil">>ブラジル</a>
+            <a class="js-modal-none" href="" data-modal="">>ボリビア</a>
+            <a class="js-modal-none" href="" data-modal="">>パラグアイ</a>
+            <a class="js-modal-none" href="" data-modal="">>ウルグアイ</a>
+            <a class="js-modal-none" href="" data-modal="">>アルゼンチン</a>
+            <a class="js-modal-none" href="" data-modal="">>ベリーズ</a>
+  
+          <h2 class="p-country-list__content__heading">オセアニア</h2>
+            <a class="js-modal-none" href="" data-modal="">>オーストラリア</a>
+            <a class="js-modal-none" href="" data-modal="">>パプアニューギニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ニュージーランド</a>
+            <a class="js-modal-none" href="" data-modal="">>ソロモン諸島</a>
+            <a class="js-modal-none" href="" data-modal="">>バヌアツ</a>
+            <a class="js-modal-none" href="" data-modal="">>フィジー</a>
+            <a class="js-modal-none" href="" data-modal="">>ニューカレドニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ミクロネシア連邦</a>
+            <a class="js-modal-none" href="" data-modal="">>サモア</a>
+            <a class="js-modal-none" href="" data-modal="">>ツバル</a>
+        </li>
+  
+        <li class="p-country-list__content__list">
+          <h2 class="p-country-list__content__heading">アジア</h2>
+            <a class="js-modal-none" href="" data-modal="">>日本</a>
+            <a class="js-modal-none" href="" data-modal="">>韓国</a>
+            <a class="js-modal-none" href="" data-modal="">>北朝鮮</a>
+            <a class="js-modal-open" href="" data-modal="china">>中国</a>
+            <a class="js-modal-none" href="" data-modal="">>モンゴル</a>
+            <a class="js-modal-none" href="" data-modal="">>カザフスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>キルギス</a>
+            <a class="js-modal-none" href="" data-modal="">>ウズベキスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>タジキスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>トルクメニスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>アフガニスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>パキスタン</a>
+            <a class="js-modal-open" href="" data-modal="india">>インド</a>
+            <a class="js-modal-none" href="" data-modal="">>モルディブ</a>
+            <a class="js-modal-none" href="" data-modal="">>スリランカ</a>
+            <a class="js-modal-none" href="" data-modal="">>ネパール</a>
+            <a class="js-modal-none" href="" data-modal="">>ブータン</a>
+            <a class="js-modal-none" href="" data-modal="">>バングラディシュ</a>
+            <a class="js-modal-none" href="" data-modal="">>マイアミ</a>
+            <a class="js-modal-none" href="" data-modal="">>タイ</a>
+            <a class="js-modal-none" href="" data-modal="">>ベトナム</a>
+            <a class="js-modal-none" href="" data-modal="">>ラオス</a>
+            <a class="js-modal-none" href="" data-modal="">>カンボジア</a>
+            <a class="js-modal-none" href="" data-modal="">>マレーシア</a>
+            <a class="js-modal-none" href="" data-modal="">>インドネシア</a>
+            <a class="js-modal-none" href="" data-modal="">>フィリピン</a>
+            <a class="js-modal-none" href="" data-modal="">>ティモール</a>
+            <a class="js-modal-none" href="" data-modal="">>イラン</a>
+            <a class="js-modal-none" href="" data-modal="">>アゼルバイジャン</a>
+            <a class="js-modal-none" href="" data-modal="">>アルメニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ジョージア</a>
+            <a class="js-modal-none" href="" data-modal="">>トルコ</a>
+            <a class="js-modal-none" href="" data-modal="">>シリア</a>
+            <a class="js-modal-none" href="" data-modal="">>イラク</a>
+            <a class="js-modal-none" href="" data-modal="">>レバノン</a>
+            <a class="js-modal-none" href="" data-modal="">>イスラエル</a>
+            <a class="js-modal-none" href="" data-modal="">>ジョーダン</a>
+            <a class="js-modal-none" href="" data-modal="">>キプロス</a>
+            <a class="js-modal-none" href="" data-modal="">>サウジアラビア</a>
+            <a class="js-modal-none" href="" data-modal="">>カタール</a>
+            <a class="js-modal-none" href="" data-modal="">>アラブ首長国連邦</a>
+            <a class="js-modal-none" href="" data-modal="">>オマーン</a>
+            <a class="js-modal-none" href="" data-modal="">>イエメン</a>
+            <a class="js-modal-none" href="" data-modal="">>バーレーン王国</a>
+            <a class="js-modal-none" href="" data-modal="">>ブルネイ</a>
+            <a class="js-modal-none" href="" data-modal="">>ヨルダン</a>
+            <a class="js-modal-none" href="" data-modal="">>クウェート</a>
+            <a class="js-modal-none" href="" data-modal="">>キルギスタン</a>
+            <a class="js-modal-none" href="" data-modal="">>ミャンマー</a>
+            <a class="js-modal-none" href="" data-modal="">>ナウル</a>
+            <a class="js-modal-none" href="" data-modal="">>パラオ</a>
+            <a class="js-modal-none" href="" data-modal="">>シンガポール</a>
+            <a class="js-modal-none" href="" data-modal="">>東ティモール</a>
+        </li>
+  
+        <li class="p-country-list__content__list">
+          <h2 class="p-country-list__content__heading">ヨーロッパ</h2>
+            <a class="js-modal-open" href="" data-modal="russia">>ロシア</a>
+            <a class="js-modal-none" href="" data-modal="">>フィンランド</a>
+            <a class="js-modal-none" href="" data-modal="">>スウェーデン</a>
+            <a class="js-modal-none" href="" data-modal="">>ノルウェー</a>
+            <a class="js-modal-none" href="" data-modal="">>エストニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ラトヴィア</a>
+            <a class="js-modal-none" href="" data-modal="">>リトアニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ベラルーシ</a>
+            <a class="js-modal-none" href="" data-modal="">>ウクライナ</a>
+            <a class="js-modal-none" href="" data-modal="">>モルディブ</a>
+            <a class="js-modal-none" href="" data-modal="">>ポーランド</a>
+            <a class="js-modal-none" href="" data-modal="">>スロバキア</a>
+            <a class="js-modal-none" href="" data-modal="">>チェコ</a>
+            <a class="js-modal-none" href="" data-modal="">>ハンガリー</a>
+            <a class="js-modal-none" href="" data-modal="">>ルーマニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ブルガリア</a>
+            <a class="js-modal-none" href="" data-modal="">>ギリシャ</a>
+            <a class="js-modal-none" href="" data-modal="">>マケドニア</a>
+            <a class="js-modal-none" href="" data-modal="">>アルバニア</a>
+            <a class="js-modal-none" href="" data-modal="">>セルビア</a>
+            <a class="js-modal-none" href="" data-modal="">>ボスニア</a>
+            <a class="js-modal-none" href="" data-modal="">>クロアチア</a>
+            <a class="js-modal-none" href="" data-modal="">>スロベニア</a>
+            <a class="js-modal-none" href="" data-modal="">>オーストリア</a>
+            <a class="js-modal-open" href="" data-modal="germany">>ドイツ</a>
+            <a class="js-modal-none" href="" data-modal="">>デンマーク</a>
+            <a class="js-modal-none" href="" data-modal="">>ベルギー</a>
+            <a class="js-modal-none" href="" data-modal="">>スイス</a>
+            <a class="js-modal-open" href="" data-modal="italy">>イタリア</a>
+            <a class="js-modal-none" href="" data-modal="">>マルタ諸島</a>
+            <a class="js-modal-open" href="" data-modal="france">>フランス</a>
+            <a class="js-modal-open" href="" data-modal="uk">>イギリス</a>
+            <a class="js-modal-none" href="" data-modal="">>アイルランド</a>
+            <a class="js-modal-none" href="" data-modal="">>スペイン</a>
+            <a class="js-modal-none" href="" data-modal="">>ポルトガル</a>
+            <a class="js-modal-none" href="" data-modal="">>アンドラ</a>
+            <a class="js-modal-none" href="" data-modal="">>キリバス</a>
+            <a class="js-modal-none" href="" data-modal="">>ラトビア</a>
+            <a class="js-modal-none" href="" data-modal="">>リヒテンシュタイン</a>
+            <a class="js-modal-none" href="" data-modal="">>ルクセンブルク</a>
+            <a class="js-modal-none" href="" data-modal="">>マーシャル諸島</a>
+            <a class="js-modal-none" href="" data-modal="">>モナコ</a>
+            <a class="js-modal-none" href="" data-modal="">>モンテネグロ</a>
+            <a class="js-modal-none" href="" data-modal="">>オランダ</a>
+            <a class="js-modal-none" href="" data-modal="">>北マケドニア</a>
+            <a class="js-modal-none" href="" data-modal="">>モルドバ</a>
+            <a class="js-modal-none" href="" data-modal="">>サンマリノ</a>
+        </li>
+  
+        <li class="p-country-list__content__list">
+          <h2 class="p-country-list__content__heading">アフリカ</h2>
+            <a class="js-modal-none" href="" data-modal="">>エジプト</a>
+            <a class="js-modal-none" href="" data-modal="">>リビア</a>
+            <a class="js-modal-none" href="" data-modal="">>アルジェリア</a>
+            <a class="js-modal-none" href="" data-modal="">>チュニジア</a>
+            <a class="js-modal-none" href="" data-modal="">>モロッコ</a>
+            <a class="js-modal-none" href="" data-modal="">>モーリタニア</a>
+            <a class="js-modal-none" href="" data-modal="">>マリ</a>
+            <a class="js-modal-none" href="" data-modal="">>ニジェール</a>
+            <a class="js-modal-none" href="" data-modal="">>チャド</a>
+            <a class="js-modal-none" href="" data-modal="">>エリトリア</a>
+            <a class="js-modal-none" href="" data-modal="">>エチオピア</a>
+            <a class="js-modal-none" href="" data-modal="">>ソマリア</a>
+            <a class="js-modal-none" href="" data-modal="">>ケニア</a>
+            <a class="js-modal-none" href="" data-modal="">>スーダン</a>
+            <a class="js-modal-none" href="" data-modal="">>中央アフリカ</a>
+            <a class="js-modal-none" href="" data-modal="">>カメルーン</a>
+            <a class="js-modal-none" href="" data-modal="">>ナイジェリア</a>
+            <a class="js-modal-none" href="" data-modal="">>ベナン</a>
+            <a class="js-modal-none" href="" data-modal="">>トーゴ</a>
+            <a class="js-modal-none" href="" data-modal="">>ブルキナファソ</a>
+            <a class="js-modal-none" href="" data-modal="">>ガーナ</a>
+            <a class="js-modal-none" href="" data-modal="">>コートジボワール</a>
+            <a class="js-modal-none" href="" data-modal="">>リベリア</a>
+            <a class="js-modal-none" href="" data-modal="">>シエラレオネ</a>
+            <a class="js-modal-none" href="" data-modal="">>ギニア</a>
+            <a class="js-modal-none" href="" data-modal="">>セネガル</a>
+            <a class="js-modal-none" href="" data-modal="">>ギニアビサウ</a>
+            <a class="js-modal-none" href="" data-modal="">>ガンビア</a>
+            <a class="js-modal-none" href="" data-modal="">>カーボベルデ</a>
+            <a class="js-modal-none" href="" data-modal="">>サントメプリンシペ</a>
+            <a class="js-modal-none" href="" data-modal="">>赤道ギニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ガホン</a>
+            <a class="js-modal-none" href="" data-modal="">>コンゴ</a>
+            <a class="js-modal-none" href="" data-modal="">>ウガンダ</a>
+            <a class="js-modal-none" href="" data-modal="">>タンザニア</a>
+            <a class="js-modal-none" href="" data-modal="">>ルワンダ</a>
+            <a class="js-modal-none" href="" data-modal="">>ブルンジ</a>
+            <a class="js-modal-none" href="" data-modal="">>アンゴラ</a>
+            <a class="js-modal-none" href="" data-modal="">>ザンビア</a>
+            <a class="js-modal-none" href="" data-modal="">>マラウイ</a>
+            <a class="js-modal-none" href="" data-modal="">>モザンビーク</a>
+            <a class="js-modal-none" href="" data-modal="">>コモロ</a>
+            <a class="js-modal-none" href="" data-modal="">>マダガスカル</a>
+            <a class="js-modal-none" href="" data-modal="">>セイシェル</a>
+            <a class="js-modal-none" href="" data-modal="">>モーリシャス</a>
+            <a class="js-modal-none" href="" data-modal="">>レユニオン</a>
+            <a class="js-modal-none" href="" data-modal="">>ジンバブエ</a>
+            <a class="js-modal-none" href="" data-modal="">>ボツワナ</a>
+            <a class="js-modal-none" href="" data-modal="">>ナミビア</a>
+            <a class="js-modal-none" href="" data-modal="">>南アフリカ</a>
+            <a class="js-modal-none" href="" data-modal="">>レソト</a>
+            <a class="js-modal-none" href="" data-modal="">>エスティワニ</a>
+            <a class="js-modal-none" href="" data-modal="">>コンゴ民主共和国</a>
+            <a class="js-modal-none" href="" data-modal="">>ジブチ</a>
+            <a class="js-modal-none" href="" data-modal="">>ガボン</a>
+            <a class="js-modal-none" href="" data-modal="">>マラウィ</a>
+            <a class="js-modal-none" href="" data-modal="">>セントビンセント</a>
+            <a class="js-modal-none" href="" data-modal="">>南スーダン</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- モーダル内容 -->
+    <div id="p-modal" class="p-modal-mask" style="display: none;">
+      <div class="p-modal-content">
+      </div>
+    </div>
+
+    <section id="section1" class="u-mt-30">
+      <!-- 世界地図 -->
+      <div id="vmap" style="
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+      ">
+      </div>
+    </section>
+
+    <section id="section2" class="u-mt-100">
+      <div class="p-whats-koromo">
+        <h1 class="p-whats-koromo__title">
+          旅する衣とは?<span class="c-line-break">-Whats is<span class="p-whats-koromo__title__italic">"TABISURU KOROMO"</span>-</span>
+          <div class="p-whats-koromo__title--green"></div>
+        </h1>
+
+        <div class="p-whats-koromo-description-wrapper u-mt-50">
+          <img src="img/body.png" alt="ボディ1" class="p-whats-koromo__description__img" />
+
+          <p class="p-whats-koromo-description u-text-bold">
+            <span class="p-whats-koromo-description--large">「衣で世界を旅しよう」</span><span class="c-line-break"></span>
+            このテーマを基に、<span class="c-line-break"></span>
+            全世界196ヶ国の有名な○○を<span class="c-line-break"></span>
+            ポップに形にしていく。<span class="c-line-break"></span>
+            ひそかに壮大なプロジェクトなのだ。
+          </p>
+        </div>
+      </div>
+
+      <div class="p-supporter u-mt-55">
+        <a href="support/support.html" class="p-supporter-btn">
+          <span class="p-supporter-btn__text">支援者ページはこちら</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="section3" class="u-mt-200">
+      <!-- ここからPOST　 -->
+      <div class="p-new-post">
+        <h2 class="p-new-post-heading">NEW POST</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper p-new-post-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide p-new-post__post01">
+              <a href="https://isenti.base.shop/items/56095830" target="_blank" rel="noopener noreferrer">
+                <img src="img/cup_ibou.png" alt="タンブラー">
+              </a>
+              <p class="p-new-post__name">タンブラー</p>  
+            </div>
+
+            <div class="swiper-slide p-new-post__post02">
+              <a href="https://isenti.base.shop/items/62132011" target="_blank" rel="noopener noreferrer">
+                <img src="img/usa.jpg" alt="自由の女神パーカー">
+              </a>
+              <p class="p-new-post__name">自由の女神パーカー</p>
+            </div>
+
+            <div class="swiper-slide p-new-post__post03">
+              <a href="https://isenti.base.shop/items/62285037" target="_blank" rel="noopener noreferrer">
+                <img src="img/china.jpg" alt="万里の長城スウェット">
+              </a>
+              <p class="p-new-post__name">万里の長城スウェット</p>
+            </div>
+
+            <div class="swiper-slide p-new-post__post04">
+              <a href="https://isenti.base.shop/items/63496208" target="_blank" rel="noopener noreferrer">
+                <img src="img/germany.jpg" alt="ケルン大聖堂スウェット">
+              </a>
+              <p class="p-new-post__name">ケルン大聖堂スウェット</p>
+            </div>
+
+            <div class="swiper-slide p-new-post__post05">
+              <a href="https://isenti.base.shop/items/64196800" target="_blank" rel="noopener noreferrer">
+                <img src="img/india.jpg" alt="タージ・マハルパーカー">
+              </a>
+              <p class="p-new-post__name">タージ・マハルパーカー</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4" class="u-mt-200">
+      <!-- ここからABOUT -->
+      <div class="p-about">
+        <h2 class="p-about-heading">ABOUT US</h2>
+
+          <div class="p-about-content">
+            <div class="p-about-content--green"></div>
+
+            <img src="img/isenti_logo.jpg" alt="ブランドロゴ" class="p-about__logo">
+
+            <p class="p-about__text">"ISENTI"は群馬の素人3人が始めた小さなブランドです。<br>
+              右も左も分からないながらも少しずつ成長していく僕らを見ていてください。
+            </p>
+
+            <div class="p-about-link">
+              <a href="info/info.html" class="p-about-link__text">Details</a>
+              <div class="p-about-link__button--white"></div>
+              <div class="p-about-link__button--green"></div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="section5">
+      <!-- その他サポーター -->
+      <div class="other_support">
+        <h1 class="other_green">SUPPORTER</h1>
+      </div>
+
+      <div class="other_pic">
+        <img src="img/one_eighty.jpg" alt="" class="other_company_logo">
+        <p class="other_company_name">Darts&Bar One Eighty 様</p>
+      </div>
+
+      <div class="other_text">
+        <a href="support/support.html" class="other_flow">その他の支援者を見る</a>
+
+        <div class="support_triangle_g"></div>
+        <div class="support_triangle_w"></div>
+      </div>
+    </section>
+
+    <section id="section6">
+      <!--　MOREのとこ -->
+      <div class="more">
+        <h1 class="more_green">MORE</h1>
+
+        <div class="maru">
+          <div class="circle"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+        </div>
+
+        <div class="sns">
+          <img src="img/ibou.png" alt="アイボー" class="ibou">
+
+          <div class="half_moon_a">
+            <div class="sns_maru1">
+              <!-- BASE -->
+              <a href="https://isenti.base.shop/" target="_blank" rel="noopener noreferrer">
+                <img src="img/base.png" alt="BASE" class="base">
+              </a>
+            </div>
+            <div class="sns_maru2">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/ieyebo_official/" target="_blank" rel="noopener noreferrer">
+                <img src="img/insta.png" alt="Instagram" class="insta">
+              </a>
+            </div>
+            <div class="sns_maru3">
+              <!-- Twitter -->
+              <a href="https://twitter.com/isenti_official" target="_blank" rel="noopener noreferrer">
+                <img src="img/twitter.png" alt="Twitter" class="twitter">
+              </a>
+            </div>
+
+            <div class="sns_text">Social<br>Networking<br>Services</div>
+            <div class="sns_text2">Social<br>Networking<br>Services</div>
+
+          </div>
+
+          <div class="half_moon_b"></div>
+          <div class="half_moon_c"></div>
+          <div class="half_moon_d"></div>
+          
+        </div>
+      </div>
+    </section>
+
+      <footer>
+        <small>© 2021 ISENTI</small>
+      </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAEpfX_9ytjJt-NmoVoD0EEeEcEJ4iXC5E",
+      authDomain: "tabisuru-koromo.firebaseapp.com",
+      projectId: "tabisuru-koromo",
+      storageBucket: "tabisuru-koromo.appspot.com",
+      messagingSenderId: "10782823535",
+      appId: "1:10782823535:web:1f8c3296b3900679ae299a",
+      measurementId: "G-FJ7CF3TG9B"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
+
+</body>
+</html>
