@@ -655,7 +655,7 @@
 }
 
 .p-about-content {
-    margin-top: 25px;
+    margin-top: 50px;
     width: 50%;
     padding: 25px 15px;
     position: relative;
@@ -738,11 +738,306 @@
     font-style: italic;
     font-size: 16px;
     text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* その他サポーターのとこ */
+.p-support {
+    text-align: center;
+    position: relative;
+}
+
+.p-support-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 #2BBF00, 2px 2px 0 #2BBF00, -1px -1px 0 #2BBF00;
+    text-align: center;
+}
+
+.p-support-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.p-support-content__img {
+    width: 25%;
+}
+
+.p-support-content__text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.p-support-other {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.p-support-other:hover {
+    transform: scale(1.2);
+}
+
+.p-support-other__link {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.p-support-other__button--white {
+    margin-right: -15px;
+    border-left: 15px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    z-index: 1;
+}
+
+.p-support-other__button--green {
+    border-left: 15px solid #2BBF00;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    z-index: -1;
+}
+
+
+/* モアーのとこ */
+.p-more {
+    text-align: center;
+}
+
+.p-more-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 #2BBF00, 2px 2px 0 #2BBF00, -1px -1px 0 #2BBF00;
+    text-align: center;
+}
+
+.p-more-circle {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle--green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2BBF00;
+    border: 1px solid black;
+}
+
+.circle--white {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+    background-size: 5px 5px;
+    background-image: radial-gradient(#2BBF00 15%, transparent 20%), radial-gradient(#2BBF00 15%, transparent 20%);
+    background-position: 0 0, 15px 15px;
+    margin-top: -5px;
+}
+
+.circle--blue {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #40C7FF;
+    border: 1px solid black;
+    margin-top: -5px;
+}
+
+.p-more-content {
+    margin-top: 100px;
+}
+
+.p-more-content__right {
+    margin-top: 15px;
+    height: 150px;
+    border-radius: 75px 0 0 75px;
+    background: #2BBF00;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    max-width: none;
+    transform: translateX(25%);
+}
+
+.p-more-content__right--bg {
+    width: 100%;
+    height: 150px;
+    border-radius: 75px 0 0 75px;
+    background: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+.p-more-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+    margin-left: 150px;
+}
+
+@keyframes pulse {
+    25% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(.9);
+    }
+}
+
+.p-more-icon {
+    width: 100px;
+    height: 95px;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base {
     transition: all 0.2s;
 }
 
-.details:hover {
-    transform: scale(1.2, 1.2);
+.base:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.insta {
+    transition: all 0.2s;
+}
+
+.insta:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.twitter {
+    transition: all 0.2s;
+}
+
+.twitter:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.p-more-text {
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 0px #000000, -1px 1px 0px #000000, 1px -1px 0px #000000, -1px -1px 0px #000000, 1px 0px 0px #000000, 0px 1px 0px #000000, -1px 0px 0px #000000, 0px -1px 0px #000000;
+}
+
+.p-more-text--yellow {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: -1;
+    color: #FFD600;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 0px #000000, -1px 1px 0px #000000, 1px -1px 0px #000000, -1px -1px 0px #000000, 1px 0px 0px #000000, 0px 1px 0px #000000, -1px 0px 0px #000000, 0px -1px 0px #000000;
+}
+
+.p-more-content__left {
+    height: 150px;
+    border-radius: 75px 0 0 75px;
+    background: white;
+    border: 1px solid black;
+    background-size: 15px 15px;
+    background-image: radial-gradient(#2BBF00 15%, transparent 20%), radial-gradient(#2BBF00 15%, transparent 20%);
+    background-position: 0 0, 15px 15px;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    max-width: none;
+    transform: translateX(-55%) scale(-1, 1);
+}
+
+.p-more-content__left--bg {
+    width: 100%;
+    height: 150px;
+    border-radius: 75px 0 0 75px;
+    background: #FFD600;
+    border: 1px solid black;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+
+@-webkit-keyframes ibou {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: translate(0, -5px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0)rotate(5deg);
+    }
+}
+
+@keyframes ibou {
+    0% {
+        transform: translate(0, 0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(0, -5px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0)rotate(5deg);
+    }
+}
+
+.ibou {
+    display: none;
+    -webkit-animation: ibou 3s infinite linear alternate;
+    animation: ibou 3s infinite linear alternate;
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    right: 30%;
+    top: 10em;
 }
 
 

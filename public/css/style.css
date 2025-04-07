@@ -615,7 +615,7 @@ nav .inner ul li a {
     transform: scale(1.2, 1.2);
 } */
 
-/* その他サポーターのとこ */
+/* その他サポーターのとこ
 
 .other_support {
     text-align: center;
@@ -688,11 +688,11 @@ nav .inner ul li a {
     border-bottom: 17px solid transparent;
     position: relative;
     left: 180px;
-}
+} */
 
 /* コンプリートのとこ */
 
-.complete_overall {
+/* .complete_overall {
     margin-top: 300px;
 }
 
@@ -718,9 +718,9 @@ nav .inner ul li a {
     text-shadow: 1px 1px 0px #000000, -1px 1px 0px #000000, 1px -1px 0px #000000, -1px -1px 0px #000000, 1px 0px 0px #000000, 0px 1px 0px #000000, -1px 0px 0px #000000, 0px -1px 0px #000000;
     letter-spacing: 1px;
     top: 18px;
-}
+} */
 
-/* モアーのとこ */
+/* モアーのとこ
 
 .more {
     text-align: center;
@@ -783,9 +783,9 @@ nav .inner ul li a {
     align-items: center;
     left: 40%;
     width: 60%;
-}
+} */
 
-/* SNS */
+/* SNS
 
 .sns_maru1 {
     width: 90px;
@@ -975,7 +975,7 @@ nav .inner ul li a {
     100% {
         transform: translate(0, 0)rotate(5deg);
     }
-}
+} */
 
 /*フッター*/
 
