@@ -979,7 +979,7 @@ nav .inner ul li a {
 
 /*フッター*/
 
-small {
+/* small {
     position: relative;
     bottom: 10px;
 }
@@ -992,7 +992,7 @@ small {
 footer {
     position: relative;
     top: -1em;
-}
+} */
 
 @media screen and (max-width: 1024px) {
 
