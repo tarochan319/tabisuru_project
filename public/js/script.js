@@ -890,27 +890,31 @@ $("#vmap").on("DOMSubtreeModified propertychange", function () {
 
 
 // バーガーメニュー
-$(document).ready(function () {
-  let $nav = $(".p-nav-area");
-  let $btn = $(".p-menu");
-  let $mask = $("#mask");
-  let open = "p-nav-open";
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".p-nav-area");
+  const btn = document.querySelector(".p-menu");
+  const mask = document.getElementById("mask");
+  const links = document.querySelectorAll("#navArea a");
+  const openClass = "p-nav-open";
 
-  // menu open close
-  $btn.on("click", function () {
-    if (!$nav.hasClass(open)) {
-      $nav.addClass(open);
-    } else {
-      $nav.removeClass(open);
-    }
+  // メニューの開閉
+  btn.addEventListener("click", () => {
+    nav.classList.toggle(openClass);
+    btn.classList.toggle(openClass);
   });
 
-  // mask close
-  $mask.on("click", function () {
-    $nav.removeClass(open);
-  });
-  $('#navArea a').on('click', function () {
-    $nav.removeClass(open);
+  // マスククリックで閉じる
+  if (mask) {
+    mask.addEventListener("click", () => {
+      nav.classList.remove(openClass);
+    });
+  }
+
+  // ナビリンククリックで閉じる
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove(openClass);
+    });
   });
 });
 

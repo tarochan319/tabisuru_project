@@ -67,10 +67,6 @@
     margin-top: 4px;
 }
 
-.p-nav-open .p-menu span {
-    background-color: black;
-}
-
 .p-nav-open .p-menu span:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-315deg);
     transform: translateY(10px) rotate(-315deg);
@@ -269,8 +265,8 @@
 
 /* 国名一覧メニュー */
 .p-country-list-button {
-    display: inline-block;
-    margin: 100px 50% 0 50%;
+    display: flex;
+    justify-content: center;
     position: relative;
     padding: 10px 0;
 }
@@ -581,9 +577,8 @@
 .p-new-post {
     padding: 1.5% 0;
     background-color: #011627;
-    width: 100%;
-    height: auto;
     max-width: none;
+    width: 100vw;
 }
 
 .p-new-post-heading {
@@ -864,7 +859,12 @@
     margin-top: 100px;
 }
 
-.p-more-for-style {
+.p-more-for-style--right {
+    position: relative;
+    z-index: 1;
+}
+
+.p-more-for-style--left {
     position: relative;
     z-index: 0;
 }
@@ -914,7 +914,7 @@
 
 .p-more-icon {
     width: 100px;
-    height: 95px;
+    height: 100px;
     padding: 20px;
     border-radius: 50%;
     background: white;
@@ -989,7 +989,7 @@
     background-position: 0 0, 15px 15px;
     position: relative;
     z-index: 0;
-    transform: translateX(-50%) scale(-1, 1);
+    transform: translateX(-40%) scale(-1, 1);
     margin-top: -35px;
 }
 
@@ -1003,7 +1003,7 @@
     top: 15px;
     left: 0;
     z-index: -1;
-    transform: translateX(-50%) scale(-1, 1);
+    transform: translateX(-40%) scale(-1, 1);
 }
 
 @-webkit-keyframes ibou {
@@ -1035,14 +1035,13 @@
 }
 
 .ibou {
-    display: none;
     -webkit-animation: ibou 3s infinite linear alternate;
     animation: ibou 3s infinite linear alternate;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    z-index: 99;
     width: 30%;
-    right: 30%;
-    top: 10em;
+    bottom: 50px;
+    left: 350px;
 }
 
 
