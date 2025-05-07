@@ -893,28 +893,11 @@ $("#vmap").on("DOMSubtreeModified propertychange", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".p-nav-area");
   const btn = document.querySelector(".p-menu");
-  const mask = document.getElementById("mask");
-  const links = document.querySelectorAll("#navArea a");
   const openClass = "p-nav-open";
 
   // メニューの開閉
   btn.addEventListener("click", () => {
     nav.classList.toggle(openClass);
-    btn.classList.toggle(openClass);
-  });
-
-  // マスククリックで閉じる
-  if (mask) {
-    mask.addEventListener("click", () => {
-      nav.classList.remove(openClass);
-    });
-  }
-
-  // ナビリンククリックで閉じる
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove(openClass);
-    });
   });
 });
 
